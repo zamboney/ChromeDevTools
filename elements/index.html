@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DEMO</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>DEMO</h1>
+        <div id="click_me">
+            <span aria-label="demo for event listener">click me</span>
+        </div>
+        <button aria-label="demo for event listener" onclick="addClick()">add event</button>
+        <hr>
+        <button aria-label="demo for dom breakpoints" onclick="changeAttr(event)" attached="off">change attr</button>
+        <hr>
+        <button aria-label="demo for dom breakpoints" onclick="removeElement(event)">remove button</button>
+        <hr>
+        <div aria-label="demo for dom breakpoints" onclick="addSubDiv(event)">
+            click to add sub div root:
+        </div>
+        <hr>
+        <button onclick="callXHR()">XHR</button>
+        <hr>
+        <input type="text" id="CopyText" />
+        <div id="PasteText"></div>
+        <hr>
+        <button id="ThrowException">Throw Exception</button>
+        <hr>
+        <button id="ThrowExceptionTryCatch">Throw Exception Try catch</button>
+        <hr/>
+        <button id="CallStack">Call Stack</button>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./blackbox.js"></script>
+</body>
+
+</html>
